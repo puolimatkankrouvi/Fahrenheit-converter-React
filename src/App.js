@@ -51,6 +51,14 @@ class App extends Component {
           <h1>Celcius to Fahrenheit converter</h1>
           <form id="conversion">
             <input className="Celcius" onChange={this.convertCelciustoFahr} /> °C
+            <button 
+              onClick={
+                this.setState(
+                  {cToF: false,}
+                )
+              }
+            >&lt;&gt;
+            </button>
             <p className="Equals-sign">=</p>
             <input className="Fahrenheit" value={this.state.fahrenheit} placeholder="°F" /> °F
 
