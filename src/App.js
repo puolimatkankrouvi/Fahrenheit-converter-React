@@ -10,14 +10,13 @@ class App extends Component {
     this.state = {
       //Temperature in fahrenheit
       fahrenheit: 0,
-      //Temperature in fahrenheit
+      //Temperature in celcius
       celcius: 0,
     };
-    this.convertCelciustoFahr = this.convertCelciustoFahr.bind(this);
-    this.convertFahrToCelcius = this.convertFahrToCelcius.bind(this);
-    this.changeToFtoC = this.changeToFtoC.bind(this);
-  }
   
+  this.convertCelciustoFahr = this.convertCelciustoFahr.bind(this);
+  
+  }
 
   //Converts celcius to fahrenheit
   convertCelciustoFahr(event){
@@ -27,38 +26,16 @@ class App extends Component {
     });
   }
 
-  //Converts fahrenheit to celcius
-  convertFahrToCelcius(event){
-    var fahrenheit = Number(event.target.value);
-    this.setState( {
-        celcius: ((fahrenheit - 32) / (5/9)  ).toFixed(1)
-    });
-  }
-
-  changeToFtoC(event){
-    this.setState({cToF: false});
-  }
-
-  changeToCtoF(event){
-    this.setState({cToF: true});
-  }
-
   render() {
-    if(this.state.cToF){
       return (
         <div className="App">
 
           <h1>Celcius to Fahrenheit converter</h1>
           <form id="conversion">
             <input className="Celcius" onChange={this.convertCelciustoFahr} /> °C
-            <button 
-              onClick={
-                this.setState(
-                  {cToF: false,}
-                )
-              }
-            >&lt;&gt;
-            </button>
+            <a href="/fahrenheit-to-celcius" className="btn btn-default">
+              &lt;&gt;
+            </a>
             <p className="Equals-sign">=</p>
             <input className="Fahrenheit" value={this.state.fahrenheit} placeholder="°F" /> °F
 
@@ -66,27 +43,7 @@ class App extends Component {
         </div>
       );
     }
-  return (
-        <div className="App">
-
-          <h1>Celcius to Fahrenheit converter</h1>
-          <form id="conversion">
-            <input className="Fahrenheit" onChange={this.convertFahrToCelcius} /> °F
-            <button 
-              onClick={
-                this.setState(
-                  {cToF: true,}
-                )
-              }
-            >&lt;&gt;
-            </button>
-            <p className="Equals-sign" >=</p>
-            <input className="Celcius" value={this.state.celcius} placeholder="°C" /> °C
-
-          </form>
-        </div>
-      );
-  }
+  /**/
 }
 
 
