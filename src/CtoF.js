@@ -31,7 +31,7 @@ class CtoF extends Component {
         <form id="conversion">
           <input className="Celcius" onChange={this.convertCelciustoFahr} /> °C
           <div>
-            <a href="/fahrenheit-to-celcius" className="btn btn-default">
+            <a href="/fahrenheit-to-celcius/" className="btn btn-default">
               &lt;&gt;
             </a>
             <p className="Equals-sign">=</p>

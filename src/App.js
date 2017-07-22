@@ -14,7 +14,7 @@ class App extends Component {
         <h1>Celcius to Fahrenheit converter</h1>
         <Switch>
           <Route exact path="/" component={CtoF}/>
-          <Route path="fahrenheit-to-celcius" component={FtoC}/>
+          <Route path="/fahrenheit-to-celcius/" component={FtoC}/>
         </Switch>
       </div>
     )
