@@ -1,17 +1,14 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
-import {Router, Route} from 'react-router';
+import {render} from 'react-dom';
+import {BrowserRouter} from 'react-router-dom';
 import App from './App';
-import FtoC from './FtoC';
 import registerServiceWorker from './registerServiceWorker';
 import './index.css';
 
-const RouterConfig = () => (
-  <Router>
-    <Route path="/" component={App}/>
-    <Route path="/fahrenheit-to-celcius" component={FtoC}/>
-  </Router>
-);
+render((
+  <BrowserRouter>
+    <App />
+  </BrowserRouter>
+), document.getElementById('root'));
 
-ReactDOM.render(<App />, document.getElementById('root'));
 registerServiceWorker();

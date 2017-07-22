@@ -9,9 +9,6 @@
 .Incoming{
   display: inline-block;
 }
-p .Equals-sign{
-	display: block;
-}
 
 button{
 	margin:0;

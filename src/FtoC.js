@@ -23,21 +23,19 @@ class FtoC extends Component{
     });
   }
 
-  render(){
+  render() {
     return (
-        <div className="App">
-
-          <h1>Celcius to Fahrenheit converter</h1>
-          <form id="conversion">
-            <input className="Fahrenheit" onChange={this.convertFahrToCelcius} /> °F
+        <form id="conversion">
+          <input className="Fahrenheit" onChange={this.convertFahrToCelcius} /> °F
+          <div>
             <a href="/" className="btn btn-default">
               &lt;&gt;
             </a>
-            <p className="Equals-sign" >=</p>
-            <input className="Celcius" value={this.state.celcius} placeholder="°C" /> °C
+            <p className="Equals-sign">=</p>
+          </div>
+          <input className="Celcius" value={this.state.celcius} placeholder="°C" /> °C
 
-          </form>
-        </div>
+        </form>
       );
   }
 }
