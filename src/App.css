@@ -1,0 +1,18 @@
+.App {
+  text-align: center;
+}
+
+.App-intro {
+  font-size: large;
+}
+
+.Incoming{
+  display: inline-block;
+}
+p .Equals-sign{
+	display: block;
+}
+
+button{
+	margin:0;
+}
