@@ -25,17 +25,20 @@ class FtoC extends Component{
 
   render() {
     return (
-        <form id="conversion">
-          <input className="Fahrenheit" onChange={this.convertFahrToCelcius} /> °F
-          <div>
-            <a href="/" className="btn btn-default">
-              &lt;&gt;
-            </a>
-            <p className="Equals-sign">=</p>
-          </div>
-          <input className="Celcius" value={this.state.celcius} placeholder="°C" /> °C
+        <div>
+          <h1>Celcius to Fahrenheit converter</h1>
+          <form id="conversion">
+            <input className="Fahrenheit" onChange={this.convertFahrToCelcius} /> °F
+            <div>
+              <a href="/" className="btn btn-default">
+                &lt;&gt;
+              </a>
+              <p className="Equals-sign">=</p>
+            </div>
+            <input className="Celcius" value={this.state.celcius} placeholder="°C" /> °C
 
-        </form>
+          </form>
+        </div>
       );
   }
 }

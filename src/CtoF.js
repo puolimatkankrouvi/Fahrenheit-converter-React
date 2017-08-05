@@ -28,17 +28,20 @@ class CtoF extends Component {
 
   render() {
       return (
-        <form id="conversion">
-          <input className="Celcius" onChange={this.convertCelciustoFahr} /> °C
-          <div>
-            <a href="/fahrenheit-to-celcius/" className="btn btn-default">
-              &lt;&gt;
-            </a>
-            <p className="Equals-sign">=</p>
-          </div>
-          <input className="Fahrenheit" value={this.state.fahrenheit} placeholder="°F" /> °F
+        <div>
+          <h1>Celcius to Fahrenheit converter</h1>
+          <form id="conversion">
+            <input className="Celcius" onChange={this.convertCelciustoFahr} /> °C
+            <div>
+              <a href="/fahrenheit-to-celcius/" className="btn btn-default">
+                &lt;&gt;
+              </a>
+              <p className="Equals-sign">=</p>
+            </div>
+            <input className="Fahrenheit" value={this.state.fahrenheit} placeholder="°F" /> °F
 
-        </form>
+          </form>
+        </div>
       );
   }
 }
