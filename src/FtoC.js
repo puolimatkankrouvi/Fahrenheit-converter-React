@@ -26,7 +26,7 @@ class FtoC extends Component{
   render() {
     return (
         <div>
-          <h1>Celcius to Fahrenheit converter</h1>
+          <h1>Fahrenheit to Celcius converter</h1>
           <form id="conversion">
             <input className="Fahrenheit" onChange={this.convertFahrToCelcius} /> °F
             <div>
