@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
 import './App.css';
 
 
@@ -33,9 +34,11 @@ class CtoF extends Component {
           <form id="conversion">
             <input className="Celcius" onChange={this.convertCelciustoFahr} /> °C
             <div>
-              <a href="/fahrenheit-to-celcius/" className="btn btn-default">
-                &lt;&gt;
-              </a>
+              <button className="btn btn-default">
+                <Link to="/fahrenheit-to-celcius/">
+                  &lt;&gt;
+                </Link>
+              </button>
               <p className="Equals-sign">=</p>
             </div>
             <input className="Fahrenheit" value={this.state.fahrenheit} placeholder="°F" /> °F
