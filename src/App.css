@@ -2,14 +2,10 @@
   text-align: center;
 }
 
-.App-intro {
-  font-size: large;
-}
-
-.Incoming{
+.Incoming {
   display: inline-block;
 }
 
-button{
-	margin:0;
+button {
+	margin: 0;
 }
